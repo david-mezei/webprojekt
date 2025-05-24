@@ -1,3 +1,7 @@
+/* Importok */
+@import url('https://fonts.bunny.net/css?family=risque:400|young-serif:400');
+@import url("https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css");
+
 html, body {
     height: 100%;
     width: 100%;
@@ -17,6 +21,7 @@ html, body {
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: 'Risque', display;
 }
 
 .nav-list li {
@@ -31,13 +36,13 @@ html, body {
 }
 
 .nav-list > li > a:hover {
-    background-color: #111;
+    background-color: #555555;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #444;
+    background-color: #664217;
     min-width: 160px;
     top: 100%;
     left: 0;
@@ -50,6 +55,7 @@ html, body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: 'Risque', display;
 }
 
 .dropdown-content li a:hover {
@@ -81,7 +87,7 @@ p {
 
 /* HERO SECTION */
 .hero-bar {
-  background-image: url(res/imgs/hero_section.jpg);
+  background-image: url(imgs/hero_section.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -153,6 +159,21 @@ p {
   align-items: center;
 }
 
+.latest-posts-flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.card-overview {
+    flex: 1 1 280px; 
+    max-width: 300px;
+}
+
 
 /* FOOTER SETUP */
 footer {
@@ -184,3 +205,259 @@ footer {
   text-decoration: none;
 }
 
+/* BLOG PAGE RELATED STYLES */
+
+
+
+.article-hero {
+    padding: 80px 20px; 
+}
+
+.article-hero .hero-content h1 {
+    font-size: 2.5em; 
+}
+
+.article-meta {
+    display: block;
+    font-family: 'Young Serif', serif; 
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+}
+
+
+.article-container {
+    padding: 40px 20px; 
+    max-width: 900px; 
+    margin-top: 0; 
+    margin: auto;
+}
+
+
+.blog-post-content h2 {
+    font-family: 'Risque', display;
+    font-size: 2em;
+    color: #664217; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e8e9ed; 
+    padding-bottom: 10px;
+}
+
+.blog-post-content p {
+    line-height: 1.8; 
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 30px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-caption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: -15px; 
+    margin-bottom: 30px;
+}
+
+.related-posts {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.related-posts h2 {
+    font-family: 'Risque', display;
+    font-size: 2em;
+    color: #664217;
+    margin-bottom: 30px;
+}
+
+.latest-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0; /* Padding a kártyáknak */
+}
+
+/* Reszponzív beállítások a blogposzt oldalhoz */
+@media (max-width: 768px) {
+    .article-hero .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-hero .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .article-hero .hero-content p {
+        font-size: 1em;
+    }
+
+    .article-container {
+        padding: 20px 15px;
+    }
+
+    .blog-post-content h2 {
+        font-size: 1.5em;
+    }
+
+    .blog-post-content p {
+        font-size: 0.95em;
+    }
+}
+
+/* --- CONTACT PAGE SPECIFIC STYLES --- */
+
+.contact-section {
+    padding: 40px 20px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.contact-section h2 {
+    font-family: 'Risque', display;
+    font-size: 2.2em;
+    color: #664217;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    text-align: left; /* Az űrlap elemek balra legyenek igazítva a formán belül */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Young Serif', serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+sl-input, sl-textarea {
+    width: 100%;
+    --sl-input-border-radius: 5px; /* Lekerekített sarkok */
+    --sl-input-font-family: 'Young Serif', serif; /* Betűtípus az űrlap mezőkben */
+}
+
+sl-button[type="submit"] {
+    width: 100%;
+    --sl-button-font-size-large: 1.2em;
+    --sl-button-font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact-info {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.contact-info h3 {
+    font-family: 'Risque', display;
+    font-size: 1.8em;
+    color: #664217;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links li img:hover {
+    transform: scale(1.1); 
+}
+
+/* Reszponzív beállítások */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 20px 15px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 2em;
+    }
+}
+
+/* TABLE SETTINGS */
+ table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h3 {
+            margin-top: 30px;
+        }

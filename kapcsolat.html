@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Utazás az időben - Oldtimer blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="icon" type="image/x-icon" href="res/imgs/favicon.ico">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Főoldal</a></li>
+            <li class="dropdown">
+                <a href="#">Bejegyzések</a>
+                <ul class="dropdown-content">
+                    <li><a href="ford-mustang-1964.5.html">Ford Mustang 1964.5</a></li>
+                    <li><a href="jaguar-e-type-elegancia.html">Jaguar E-Type</a></li>
+                    <li><a href="vw-bogar-tortenet.html">VW Bogár</a></li>
+                </ul>
+            </li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </div>
+
+    <div class="hero-bar article-hero" style="background-image: url('imgs/kapcsolat_hero.jpg');">
+        <div class="hero-content">
+            <h1>Lépj velünk kapcsolatba!</h1>
+            <p>Kérdéseid vannak? Ötleted van? Esetleg csak beszélgetnél oldtimer autókról? Írj nekünk!</p>
+        </div>
+    </div>
+
+    <div class="container article-container">
+        <div class="contact-section">
+            <h2>Küldj üzenetet!</h2>
+            <p>Válaszolunk amint tudunk. Kérjük, töltsd ki az alábbi űrlapot.</p>
+
+            <form action="https://formspree.io/f/xanogwwl" method="POST" enctype="text/json" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Neved:</label>
+                    <sl-input id="name" name="name" type="text" placeholder="Teljes neved" required></sl-input>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail címed:</label>
+                    <sl-input id="email" name="email" type="email" placeholder="pelda@email.com" required></sl-input>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Tárgy:</label>
+                    <sl-input id="subject" name="subject" type="text" placeholder="Üzenet tárgya"></sl-input>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Üzeneted:</label>
+                    <sl-textarea id="message" name="message" rows="6" placeholder="Írd ide az üzeneted..." required></sl-textarea>
+                </div>
+
+                <sl-button type="submit" variant="warning" size="large">Üzenet küldése</sl-button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Elérhetőségeink</h3>
+                <ul>
+                    <li><p><strong>E-mail:</strong> <a href="mailto:mezei.david.sandor@diak.szbi-pg.hu">mezei.david.sandor@diak.szbi-pg.hu</a></p></li>
+                    <li><p><strong>Telefon:</strong> +36 20 123 4567 (hétköznap 9:00-17:00)</p></li>
+                    <li><p><strong>Cím:</strong> Oldtimer Blog Kft., 1234 Budapest, Példa utca 1.</p></li>
+                </ul>
+                <p>Közösségi média:</p>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><img src="icons/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="icons/youtube.svg" alt="YouTube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Vissza az időben - Oldtimer blog. Minden jog fenntartva. Készítette: Mezei Dávid</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+</html>
