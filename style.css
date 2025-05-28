@@ -329,6 +329,7 @@ footer {
     }
 }
 
+
 /* --- CONTACT PAGE SPECIFIC STYLES --- */
 
 .contact-section {
@@ -351,35 +352,36 @@ footer {
     line-height: 1.6;
 }
 
-.contact-form {
+form { 
     background-color: #f9f9f9;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
     text-align: left;
-    /* Az űrlap elemek balra legyenek igazítva a formán belül */
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
 
-.form-group label {
-    display: block;
+form label {
+    display: block; 
     font-family: 'Young Serif', serif;
     font-weight: bold;
     margin-bottom: 8px;
     color: #333;
 }
 
+
+form label + label { /* Minden label, ami egy másik label után jön */
+    margin-top: 20px; 
+}
+
+
 sl-input,
 sl-textarea {
     width: 100%;
     --sl-input-border-radius: 5px;
-    /* Lekerekített sarkok */
     --sl-input-font-family: 'Young Serif', serif;
-    /* Betűtípus az űrlap mezőkben */
+    margin-bottom: 10px; 
 }
 
 sl-button[type="submit"] {
@@ -442,7 +444,7 @@ sl-button[type="submit"] {
         padding: 20px 15px;
     }
 
-    .contact-form {
+    form { 
         padding: 20px;
     }
 
