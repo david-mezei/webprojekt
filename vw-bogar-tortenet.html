@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A népautó, ami meghódította a világot: A Volkswagen Bogár - Utazás az időben</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 </head>
 
@@ -48,8 +49,9 @@
                 autóban rejlő potenciált, még akkor is, ha sokak számára akkoriban furcsának és elavultnak tűnt. A
                 háború utáni Németország újjáépítésének szimbólumává vált, és hamarosan exporttermékké lépett elő.</p>
 
-            <img src="imgs/vw_bogar_gyar.jpg" alt="Volkswagen Bogár gyártósor" class="article-image">
-            <p class="image-caption">A Bogár gyártósora, ami több mint 21 millió darabot ontott magából</p>
+                <img src="imgs/vw_bogar_gyar.jpg" alt="Volkswagen Bogár gyártósor" class="article-image" data-aos="fade-left">
+                <p class="image-caption">A Bogár gyártósora, ami több mint 21 millió darabot ontott magából</p>
+
 
             <p>Az autó a hátsó motoros, léghűtéses elrendezésével, a jellegzetes kerek formájával és a rendkívüli
                 megbízhatóságával vált ismertté. Egyszerű, mégis robusztus felépítése miatt könnyen javítható volt, ami
@@ -61,7 +63,7 @@
                 Hirdetési kampányai, mint a legendás "Think Small" (Gondolkozz kicsiben), forradalmasították az
                 autóreklámot, és az autó imázsát még inkább megerősítették.</p>
 
-            <img src="imgs/vw_bogar_belter.jpg" alt="Volkswagen Bogár belső tér" class="article-image">
+            <img src="imgs/vw_bogar_belter.jpg" alt="Volkswagen Bogár belső tér" class="article-image" data-aos="fade-right">
             <p class="image-caption">A Bogár egyszerű, funkcionális belső tere</p>
 
             <p>A Bogár szerepelt a Disney "Kicsi kocsi" filmsorozatában (Herbie) is, ami tovább növelte népszerűségét a
@@ -185,8 +187,15 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
+
 </body>
 <script type="module"
     src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
 
 </html>
