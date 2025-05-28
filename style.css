@@ -2,15 +2,16 @@
 @import url('https://fonts.bunny.net/css?family=risque:400|young-serif:400');
 @import url("https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css");
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #e8e9ed
-  }
+}
 
-  /* NAVBAR SETUP */
+/* NAVBAR SETUP */
 
 .navbar {
     background-color: #664217;
@@ -28,14 +29,14 @@ html, body {
     position: relative;
 }
 
-.nav-list > li > a {
+.nav-list>li>a {
     display: block;
     color: white;
     padding: 14px 20px;
     text-decoration: none;
 }
 
-.nav-list > li > a:hover {
+.nav-list>li>a:hover {
     background-color: #555555;
 }
 
@@ -69,17 +70,17 @@ html, body {
 
 /* FONT AND TEXT ALIGN SETUP */
 h1 {
-  font-family: 'Risque', display;
+    font-family: 'Risque', display;
 }
 
 p {
-  font-family: 'Young Serif', serif;
+    font-family: 'Young Serif', serif;
 }
 
 .latest-posts-text {
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
@@ -87,122 +88,126 @@ p {
 
 /* HERO SECTION */
 .hero-bar {
-  background-image: url(imgs/hero_section.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  position: relative;
+    background-image: url(imgs/hero_section.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
 }
 
 .hero-bar::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* dark overlay */
+    z-index: 0;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: auto;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
 }
 
 .hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .hero-button {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #ff6600;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .hero-button:hover {
-  background-color: #e65c00;
+    background-color: #e65c00;
 }
 
 
 /* CARD SETUP */
 
-.latest-posts{
-  margin-right: auto;
-  margin-left: auto
+.latest-posts {
+    margin-right: auto;
+    margin-left: auto
 }
 
 
 .card-overview {
-  max-width: 300px;
-  padding-right: 10px;
+    max-width: 300px;
+    padding-right: 10px;
 }
 
 .card-overview small {
-  color: var(--sl-color-neutral-500);
+    color: var(--sl-color-neutral-500);
 }
 
 .card-overview [slot='footer'] {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .latest-posts-flex {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    padding: 20px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card-overview {
-    flex: 1 1 280px; 
+    flex: 1 1 280px;
     max-width: 300px;
 }
 
 
 /* FOOTER SETUP */
 footer {
-  background-color: #664217;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 12px;
+    background-color: #664217;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-links {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .footer-links li {
-  display: inline;
-  margin-right: 15px;
+    display: inline;
+    margin-right: 15px;
 }
 
 .footer-links li a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* BLOG PAGE RELATED STYLES */
@@ -210,16 +215,16 @@ footer {
 
 
 .article-hero {
-    padding: 80px 20px; 
+    padding: 80px 20px;
 }
 
 .article-hero .hero-content h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
 }
 
 .article-meta {
     display: block;
-    font-family: 'Young Serif', serif; 
+    font-family: 'Young Serif', serif;
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.8);
     margin-top: 15px;
@@ -227,9 +232,9 @@ footer {
 
 
 .article-container {
-    padding: 40px 20px; 
-    max-width: 900px; 
-    margin-top: 0; 
+    padding: 40px 20px;
+    max-width: 900px;
+    margin-top: 0;
     margin: auto;
 }
 
@@ -237,26 +242,26 @@ footer {
 .blog-post-content h2 {
     font-family: 'Risque', display;
     font-size: 2em;
-    color: #664217; 
+    color: #664217;
     margin-top: 40px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #e8e9ed; 
+    border-bottom: 2px solid #e8e9ed;
     padding-bottom: 10px;
 }
 
 .blog-post-content p {
-    line-height: 1.8; 
+    line-height: 1.8;
     margin-bottom: 20px;
-    text-align: justify; 
+    text-align: justify;
 }
 
 .article-image {
     max-width: 100%;
     height: auto;
-    display: block; 
-    margin: 30px auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-caption {
@@ -264,7 +269,7 @@ footer {
     font-size: 0.9em;
     color: #555;
     text-align: center;
-    margin-top: -15px; 
+    margin-top: -15px;
     margin-bottom: 30px;
 }
 
@@ -287,7 +292,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     justify-items: center;
-    padding: 20px 0; /* Padding a kártyáknak */
+    padding: 20px 0;
+    /* Padding a kártyáknak */
 }
 
 /* Reszponzív beállítások a blogposzt oldalhoz */
@@ -327,9 +333,9 @@ footer {
 
 .contact-section {
     padding: 40px 20px;
-    max-width: 800px; 
-    margin: 0 auto; 
-    text-align: center; 
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contact-section h2 {
@@ -351,7 +357,8 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 40px;
-    text-align: left; /* Az űrlap elemek balra legyenek igazítva a formán belül */
+    text-align: left;
+    /* Az űrlap elemek balra legyenek igazítva a formán belül */
 }
 
 .form-group {
@@ -366,10 +373,13 @@ footer {
     color: #333;
 }
 
-sl-input, sl-textarea {
+sl-input,
+sl-textarea {
     width: 100%;
-    --sl-input-border-radius: 5px; /* Lekerekített sarkok */
-    --sl-input-font-family: 'Young Serif', serif; /* Betűtípus az űrlap mezőkben */
+    --sl-input-border-radius: 5px;
+    /* Lekerekített sarkok */
+    --sl-input-font-family: 'Young Serif', serif;
+    /* Betűtípus az űrlap mezőkben */
 }
 
 sl-button[type="submit"] {
@@ -423,7 +433,7 @@ sl-button[type="submit"] {
 }
 
 .social-links li img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Reszponzív beállítások */
@@ -442,22 +452,27 @@ sl-button[type="submit"] {
 }
 
 /* TABLE SETTINGS */
- table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        h3 {
-            margin-top: 30px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+h3 {
+    margin-top: 30px;
+}
